@@ -16,8 +16,6 @@ public class Statistics {
     @Getter
     @Setter
     private static BigDecimal countLose = new BigDecimal(String.valueOf(0));
-    @Setter
-    private HashMap<Integer, WinLose> stepResult = new HashMap();
 
     public static void getStatistics() {
         BigDecimal sum = new BigDecimal(String.valueOf(countLose.add(countWin)));
